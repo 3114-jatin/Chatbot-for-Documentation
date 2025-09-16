@@ -1,0 +1,10 @@
+streamlit
+openai
+sentence-transformers
+faiss-cpu
+python-docx
+pdfplumber
+pandas
+openpyxl
+tiktoken
+nltk
