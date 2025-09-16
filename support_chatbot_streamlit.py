@@ -228,7 +228,7 @@ def call_llm(system_prompt: str, user_prompt: str, api_key: str, conversation_hi
         resp = openai.ChatCompletion.create(model="gpt-4o-mini", messages=messages, temperature=0.2)
     except Exception:
         # fallback to gpt-4 if not available
-        resp = openai.ChatCompletion.create(model="gpt-4", messages=messages, temperature=0.2)
+        resp = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, temperature=0.2)
     return resp['choices'][0]['message']['content']
 
 # -----------------------------
@@ -403,5 +403,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
